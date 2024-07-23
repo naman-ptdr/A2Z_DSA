@@ -8,7 +8,7 @@ class Node{
     public:
     // constructor
     Node (int data1, Node* next1){
-        data=data1;  // Initialize data with the provided value
+        data=data1;  // Initialize data with the provided valu
         next=next1;  // Initialize next with the provided
     }
 
