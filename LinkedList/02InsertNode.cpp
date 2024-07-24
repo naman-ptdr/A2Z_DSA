@@ -1,3 +1,14 @@
+// Problem Statement:  Given a linked list and an integer value val,
+// insert a new node with that value at the beginning 
+// (before the head) of the list and return the updated linked list.
+
+
+// Approach:
+// To insert a new node with a value before the head of the list, 
+// create a new node with the given value val pointing to the head. 
+// This node will be the new head of the linked list.
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -59,3 +70,9 @@ int main()
 
     return 0;
 }
+
+
+// Time Complexity: O(1) for inserting the new head of the
+// linked list and O(N) for printing the linked list.
+
+// Space Complexity: O(1), as we have not used any extra space.

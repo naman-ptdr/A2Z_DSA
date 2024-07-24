@@ -1,3 +1,17 @@
+// Problem Statement: Given a linked list, delete the tail of 
+// the linked list and print the updated linked list.
+
+// Approach:
+// The main intuition is to point the second last node to null to 
+// get the updated linked list. Hence, we will iterate till the second last node and make it point to NULL. This will effectively skip the last node of the list therefore, we will free up the memory being occupied by this node (Only in the case of C++).
+
+// Two edge cases to consider are:
+
+// If the input linked list is empty, we return null.
+// If there is only one node in the list, that node itself will be 
+// the tail, therefore we return null after deleting that node.
+
+
 #include<bits/stdc++.h>
 using namespace std;
 // Node class for a linked list
@@ -54,3 +68,7 @@ int main() {
     // Print the linked list after deletion
     printLL(head);
 }
+
+// Time Complexity: O(N) for traversing the linked list and updating the tail.
+
+// Space Complexity: O(1), as we have not used any extra space.

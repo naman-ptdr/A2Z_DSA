@@ -1,3 +1,10 @@
+// Creating a Linked List
+// There are two information sets to store at every node,
+// thus there is a need to create a self-defined data type
+// to handle them. Therefore, we will use the help of structs
+// and classes.
+
+
 #include<bits/stdc++.h>
 using namespace std;
 class Node{

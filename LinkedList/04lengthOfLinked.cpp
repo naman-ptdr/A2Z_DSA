@@ -1,3 +1,12 @@
+// Problem Statement: Given the head of a linked list, print 
+// the length of the linked list.
+
+// Approach:
+// The most naive method to find the length of a linked list is 
+// to count the number of nodes in the list by doing a traversal 
+// in the Linked list.
+
+
 #include <bits/stdc++.h>
 using namespace std;
 class Node
@@ -47,3 +56,12 @@ int main()
     // Print the length of the linked list
     cout << lengthOfLinkedList(head) << '\n';
 }
+
+
+// Time Complexity: 
+
+// Since we are iterating over the entire list,  time complexity is O(N).
+
+// Space Complexity:
+
+// We are not using any extra space, thus space complexity is O(1) or constant.
