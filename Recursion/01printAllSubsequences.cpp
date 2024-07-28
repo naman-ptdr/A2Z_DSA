@@ -1,3 +1,4 @@
+//  print all subsequences 
 #include<bits/stdc++.h>
 using namespace std;
 
