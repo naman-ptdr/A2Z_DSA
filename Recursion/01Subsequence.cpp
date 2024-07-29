@@ -1,6 +1,6 @@
 // Print only one subsequence whose some is equal to k
 
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 // bool flag = false;
