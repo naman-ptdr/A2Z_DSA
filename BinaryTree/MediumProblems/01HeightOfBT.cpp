@@ -92,3 +92,65 @@ int main() {
 // Time Complexity: O(N) where N is the number of nodes in the Binary Tree. This complexity arises from visiting each node exactly once during the traversal to determine the maximum depth.
 
 // Space Complexity: O(N) where N is the number of nodes in the Binary Tree because in the worst case scenario the tree is balanced and has N/2 nodes in its last level which will have to be stored in the queue.
+
+
+
+
+
+
+
+// Approach
+// Initialize:
+
+// Use a queue to keep track of nodes at each level. Start by enqueuing the root node.
+// Maintain a variable to count the depth of the tree, starting at 0.
+// Level-order Traversal:
+
+// While the queue is not empty:
+// Determine the number of nodes at the current level (this is the size of the queue).
+// For each node at the current level, dequeue the node and enqueue its children (left and right children) if they exist.
+// After processing all nodes at the current level, increment the depth counter.
+// Return the depth after the traversal is complete.
+
+// Complexity
+// Time Complexity: O(N), where N is the number of nodes in the tree. Each node is enqueued and dequeued exactly once.
+// Space Complexity: O(W), where W is the maximum width of the tree at any level. In the worst case, this is O(N) if the tree is a complete binary tree.
+
+
+
+
+// Level Order traverse
+
+// #include <queue>
+
+// class TreeNode {
+// public:
+//     int val;
+//     TreeNode* left;
+//     TreeNode* right;
+//     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+// };
+
+// class Solution {
+// public:
+//     int maxDepth(TreeNode* root) {
+//         if (root == nullptr) return 0;
+        
+//         std::queue<TreeNode*> q;
+//         q.push(root);
+//         int depth = 0;
+        
+//         while (!q.empty()) {
+//             int levelSize = q.size(); // Number of nodes at the current level
+//             for (int i = 0; i < levelSize; ++i) {
+//                 TreeNode* node = q.front();
+//                 q.pop();
+//                 if (node->left) q.push(node->left);
+//                 if (node->right) q.push(node->right);
+//             }
+//             ++depth; // Increment depth after processing the current level
+//         }
+        
+//         return depth;
+//     }
+// };
