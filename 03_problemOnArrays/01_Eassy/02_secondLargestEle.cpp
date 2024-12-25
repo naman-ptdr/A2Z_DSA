@@ -7,7 +7,7 @@
 
 // Second Smallest Algo:
 
-// If the current element is smaller than ‘small’, then we update second_small and small variables
+// If the current    element is smaller than ‘small’, then we update second_small and small variables
 // Else if the current element is smaller than ‘second_small’ then we update the variable ‘second_small’
 // Once we traverse the entire array, we would find the second smallest element in the variable second_small.
 // Here’s a quick demonstration of the same.
