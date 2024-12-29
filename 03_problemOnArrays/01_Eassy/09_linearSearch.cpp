@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 int search(int arr[],int n,int num)
 {
     int i;
@@ -12,7 +11,6 @@ int search(int arr[],int n,int num)
     return -1;
 }
 int main()
-
 {
     int arr[]={1,2,3,4,5};
     int num = 4;
