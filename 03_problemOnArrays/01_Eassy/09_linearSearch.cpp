@@ -12,6 +12,7 @@ int search(int arr[],int n,int num)
 }
 int main()
 {
+    
     int arr[]={1,2,3,4,5};
     int num = 4;
     int n = sizeof(arr)/sizeof(arr[0]);
