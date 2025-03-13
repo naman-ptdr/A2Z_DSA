@@ -21,10 +21,7 @@
 // Note: This intuition is simply the logic of cancellation i.e. a variation of Moore’s Voting Algorithm that we used in the problem Majority Element (> N/2).
 
 
-
-
-
-int #include <bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 vector<int> majorityElement(vector<int> v) {
